@@ -1,0 +1,123 @@
+<Site xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1"
+	xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Common.Domain.Model">
+	<BaseRiskScore i:nil="true" />
+	<Devices>
+		<Device z:Id="i2">
+			<Nodes>
+				<Node z:Id="i3">
+					<BaseRiskScore i:nil="true" />
+					<Device i:nil="true" />
+					<Device_id i:nil="true" />
+					<EvalRiskScore i:nil="true" />
+					<LogicalSystems />
+					<NetworkDevices />
+					<NodeOperatingSystemSoftwares />
+					<Origin i:nil="true" />
+					<Origin_id>0</Origin_id>
+					<Ports />
+					<RiskNodes />
+					<Softwares />
+					<ThreatRiskAnalysisResults />
+					<ThreatStartingNodes />
+					<Vulnerabilities />
+					<creationType i:nil="true" />
+					<globalUniqeId i:nil="true" />
+					<id>-52</id>
+					<ipaddress >xxx</ipaddress>
+					<macaddress i:nil="true" />
+					<name i:nil="true" />
+					<status i:nil="true" />
+				</Node>
+			</Nodes>
+			<Origin i:nil="true" />
+			<Origin_id>0</Origin_id>
+			<Site i:nil="true" />
+			<Site_id>16</Site_id>
+			<id>0</id>
+			<type i:nil="true" />
+		</Device>
+		<Device z:Id="i4">
+			<Nodes>
+				<Node z:Id="i5">
+					<BaseRiskScore i:nil="true" />
+					<Device i:nil="true" />
+					<Device_id i:nil="true" />
+					<EvalRiskScore i:nil="true" />
+					<LogicalSystems />
+					<NetworkDevices />
+					<NodeOperatingSystemSoftwares />
+					<Origin i:nil="true" />
+					<Origin_id>0</Origin_id>
+					<Ports />
+					<RiskNodes />
+					<Softwares />
+					<ThreatRiskAnalysisResults />
+					<ThreatStartingNodes />
+					<Vulnerabilities />
+					<creationType i:nil="true" />
+					<globalUniqeId i:nil="true" />
+					<id>-54</id>
+					<ipaddress i:nil="true" />
+					<macaddress i:nil="true" />
+					<name i:nil="true" />
+					<status i:nil="true" />
+				</Node>
+			</Nodes>
+			<Origin i:nil="true" />
+			<Origin_id>0</Origin_id>
+			<Site i:nil="true" />
+			<Site_id>16</Site_id>
+			<id>0</id>
+			<type i:nil="true" />
+		</Device>
+		<Device z:Id="i6">
+			<Nodes>
+				<Node z:Id="i7">
+					<BaseRiskScore i:nil="true" />
+					<Device i:nil="true" />
+					<Device_id i:nil="true" />
+					<EvalRiskScore i:nil="true" />
+					<LogicalSystems />
+					<NetworkDevices />
+					<NodeOperatingSystemSoftwares />
+					<Origin i:nil="true" />
+					<Origin_id>0</Origin_id>
+					<Ports />
+					<RiskNodes />
+					<Softwares />
+					<ThreatRiskAnalysisResults />
+					<ThreatStartingNodes />
+					<Vulnerabilities />
+					<creationType i:nil="true" />
+					<globalUniqeId i:nil="true" />
+					<id>-55</id>
+					<ipaddress i:nil="true" />
+					<macaddress i:nil="true" />
+					<name i:nil="true" />
+					<status i:nil="true" />
+				</Node>
+			</Nodes>
+			<Origin i:nil="true" />
+			<Origin_id>0</Origin_id>
+			<Site i:nil="true" />
+			<Site_id>16</Site_id>
+			<id>0</id>
+			<type i:nil="true" />
+		</Device>
+	</Devices>
+	<EndIP i:nil="true" />
+	<EvalRiskScore i:nil="true" />
+	<Name i:nil="true" />
+	<NumOfDevices i:nil="true" />
+	<NumOfVulnerabilities i:nil="true" />
+	<Origin i:nil="true" />
+	<Origin_id>0</Origin_id>
+	<SiteCredentials />
+	<SiteScanStatus />
+	<SiteScanSummary i:nil="true" />
+	<StartIP i:nil="true" />
+	<Subnet i:nil="true" />
+	<globalId>1-localhost-10.240.97.67-10.240.97.67</globalId>
+	<id>16</id>
+	<subnet_id i:nil="true" />
+</Site>

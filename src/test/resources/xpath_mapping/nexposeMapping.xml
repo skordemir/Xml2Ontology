@@ -1,0 +1,70 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="NexposeReport/nodes/node" ontology="Node" domain="">
+            <dataProperties>
+                <dataProperty xpath="@status" ontology="status" domain="Node"/>
+                <dataProperty xpath="@address" ontology="ip" domain="Node"/>
+                <dataProperty xpath="@hardware-address" ontology="mac" domain="Node"/>
+                <dataProperty xpath="names/name" ontology="name" domain="Node"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="software/fingerprint" ontology="Software" domain="">
+                    <dataProperties>
+                        <dataProperty xpath="@product" ontology="product" domain="Software"/>
+                        <dataProperty xpath="@version" ontology="version" domain="Software"/>
+                        <dataProperty xpath="@vendor" ontology="vendor" domain="Software"/>
+                        <dataProperty xpath="@family" ontology="family" domain="Software"/>
+                        <dataProperty xpath="@certainty" ontology="certainty" domain="Software"/>
+                    </dataProperties>
+                </mapping>
+                <mapping
+                        xpath="tests/test[@status='vulnerable-version'] | tests/test[@status='vulnerable-exploited']  | tests/test[@status='vulnerable']"
+                        ontology="Vulnerability" domain="Node">
+                    <dataProperties>
+                        <dataProperty xpath="@id" ontology="key" domain="Vulnerability"/>
+                        <dataProperty xpath="@status" ontology="status" domain="Vulnerability"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="fingerprints/os" ontology="OS" domain="">
+                    <dataProperties>
+                        <dataProperty xpath="@product" ontology="product" domain="OS"/>
+                        <dataProperty xpath="@version" ontology="version" domain="OS"/>
+                        <dataProperty xpath="@vendor" ontology="vendor" domain="OS"/>
+                        <dataProperty xpath="@family" ontology="family" domain="OS"/>
+                        <dataProperty xpath="@certainty" ontology="certainty" domain="OS"/>
+                        <dataProperty xpath="@arch" ontology="architecture" domain="OS"/>
+                        <dataProperty xpath="@device-class" ontology="type" domain="Node"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="endpoints/endpoint" ontology="Port" domain="">
+                    <dataProperties>
+                        <dataProperty xpath="@protocol" ontology="protocol" domain="Port"/>
+                        <dataProperty xpath="@port" ontology="port" domain="Port"/>
+                        <dataProperty xpath="@status" ontology="status" domain="Port"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="services/service" ontology="Service" domain="">
+                            <dataProperties>
+                                <dataProperty xpath="@name" ontology="description" domain="Service"/>
+                                <dataProperty xpath="fingerprints/fingerprint/@certainty" ontology="certainty"
+                                              domain="Service"/>
+                                <dataProperty xpath="fingerprints/fingerprint/@product" ontology="product"
+                                              domain="Service"/>
+                            </dataProperties>
+                            <mappings>
+                                <mapping
+                                        xpath="tests/test[@status='vulnerable-version'] | tests/test[@status='vulnerable-exploited']  | tests/test[@status='vulnerable']"
+                                        ontology="Vulnerability" domain="Port">
+                                    <dataProperties>
+                                        <dataProperty xpath="@id" ontology="key" domain="Vulnerability"/>
+                                        <dataProperty xpath="@status" ontology="status" domain="Vulnerability"/>
+                                    </dataProperties>
+                                </mapping>
+                            </mappings>
+                        </mapping>
+                    </mappings>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

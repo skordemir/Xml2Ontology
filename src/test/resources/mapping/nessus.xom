@@ -1,0 +1,18 @@
+<xmltoOntology>
+<classPropertyMapping>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost" ontology = "Node"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/HostProperties" ontology = "OS"/>	
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem" ontology = "Port"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/cve" ontology = "Vulnerability" domain="Port"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/xref" ontology = "Vulnerability" domain="Port"/>
+</classPropertyMapping>
+<dataPropertyMapping >
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/@name" ontology = "address" range="Address"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/@port" ontology = "Port" range="Port"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/@protocol" ontology = "portNumber" range="Port" />
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/@svc_name" ontology = "serviceName" range="Service"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/@pluginFamily" ontology = "family" range="Service"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/cve/@cve" ontology = "vulnerabilityKey" range="Vulnerability"/>
+	<mapping xpath = "/NessusClientData_v2/Report/ReportHost/ReportItem/xref/@xref" ontology = "vulnerabilityKey" range="Vulnerability"/>
+</dataPropertyMapping>
+</xmltoOntology>

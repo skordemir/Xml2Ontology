@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<network
+        >
+    <orgUnitName>yeniiii</orgUnitName>
+    <routers>
+        <router>
+            <ip>localhost</ip>
+            <desc>Linux ubuntusrv 2.6.32-35-generic #78-Ubuntu SMP Tue Oct 11
+                16:11:24 UTC 2011 x86_64
+            </desc>
+            <subnets>
+                <subnet>
+                    <startIp>10.240.97.0</startIp>
+                    <endIp>10.240.97.255</endIp>
+                    <sites>
+                        <site>
+                            <name>deneme3</name>
+                            <startIp>192.168.0.1</startIp>
+                            <endIp>192.168.0.10</endIp>
+                        </site>
+                    </sites>
+                </subnet>
+            </subnets>
+            <devices>
+                <device>
+                    <ip>10.240.97.7</ip>
+                    <desc>No desc</desc>
+                    <subnets/>
+                </device>
+                <device>
+                    <ip>10.240.97.56</ip>
+                    <desc>No desc</desc>
+                    <subnets/>
+                </device>
+                <device>
+                    <ip>10.240.97.1</ip>
+                    <desc>No desc</desc>
+                    <subnets/>
+                </device>
+                <device>
+                    <ip>10.240.97.67</ip>
+                    <desc>Hardware: Intel64 Family 6 Model 42 Stepping 7 AT/AT
+                        COMPATIBLE - Software: Windows Version 6.2 (Build 9200
+                        Multiprocessor Free)
+                    </desc>
+                    <subnets/>
+                </device>
+                <device>
+                    <ip>10.240.97.2</ip>
+                    <desc>No desc</desc>
+                    <subnets/>
+                </device>
+            </devices>
+        </router>
+    </routers>
+</network>

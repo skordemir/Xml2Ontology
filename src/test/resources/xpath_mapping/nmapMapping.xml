@@ -1,0 +1,39 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="nmaprun/host" ontology="Node">
+            <dataProperties>
+                <dataProperty xpath="status/@state" ontology="status" domain="Node"/>
+                <dataProperty xpath="uptime/@seconds" ontology="uptime" domain="Node"/>
+                <dataProperty xpath="hostnames/@name" ontology="name" domain="Node"/>
+                <dataProperty xpath="address/@addr" ontology="ip" domain="Node"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="os/osclass" ontology="OS">
+                    <dataProperties>
+                        <dataProperty xpath="@osfamily" ontology="family" domain="OS"/>
+                        <dataProperty xpath="@vendor" ontology="vendor" domain="OS"/>
+                        <dataProperty xpath="@accuracy" ontology="certainity" domain="OS"/>
+                        <dataProperty xpath="@type" ontology="type" domain="Node"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="ports/port" ontology="Port">
+                    <dataProperties>
+                        <dataProperty xpath="@protocol" ontology="protocol" domain="Port"/>
+                        <dataProperty xpath="@portid" ontology="port" domain="Port"/>
+                        <dataProperty xpath="@state" ontology="status" domain="Port"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="service" ontology="Service">
+                            <dataProperties>
+                                <dataProperty xpath="@product" ontology="product" domain="Service"/>
+                                <dataProperty xpath="@name" ontology="name" domain="Service"/>
+                                <dataProperty xpath="@version" ontology="version" domain="Service"/>
+                                <dataProperty xpath="@method" ontology="method" domain="Service"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

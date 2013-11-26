@@ -1,0 +1,123 @@
+<Device xmlns="http://schemas.datacontract.org/2004/07/Common.Domain.Model" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" z:Id="i1">
+   <Nodes xmlns="">
+      <Node z:Id="i2">
+         <BaseRiskScore i:nil="true" />
+         <Device i:nil="true" />
+         <Device_id i:nil="true" />
+         <EvalRiskScore i:nil="true" />
+         <NetworkDevices />
+         <NodeOperatingSystemSoftwares>
+            <Software z:Id="i3">
+               <CPEContent>cpe:/o:microsoft:windows_7:-:-:x64</CPEContent>
+               <NVDId>109128</NVDId>
+               <Nodes />
+               <Nodes1 />
+               <PortNumber i:nil="true" />
+               <Ports />
+               <architecture i:nil="true" />
+               <certainity i:nil="true" />
+               <description i:nil="true" />
+               <family i:nil="true" />
+               <id>0</id>
+               <product>windows_7</product>
+               <vendor>microsoft</vendor>
+               <version>-</version>
+            </Software>
+         </NodeOperatingSystemSoftwares>
+         <Ports />
+         <RiskNodes />
+         <Softwares>
+            <Service:Software xmlns:Service="http://schemas.datacontract.org/2004/07/Common.Domain.Model" z:Id="i4">
+               <CPEContent>cpe:/a:microsoft:iis:7.5</CPEContent>
+               <NVDId>126703</NVDId>
+               <Nodes>
+                  <Node z:Ref="i2" />
+               </Nodes>
+               <Nodes1 />
+               <PortNumber>82</PortNumber>
+               <Ports>
+                  <Port z:Id="i5">
+                     <Node i:nil="true" />
+                     <Node_id>0</Node_id>
+                     <Softwares>
+                        <Software z:Ref="i4" />
+                     </Softwares>
+                     <Vulnerabilities />
+                     <id>0</id>
+                     <portNumber>82</portNumber>
+                     <portProtocol i:nil="true" />
+                  </Port>
+               </Ports>
+               <architecture i:nil="true" />
+               <certainity i:nil="true" />
+               <description i:nil="true" />
+               <family i:nil="true" />
+               <id>0</id>
+               <product>iis</product>
+               <vendor>microsoft</vendor>
+               <version>7.5</version>
+            </Service:Software>
+            <Software z:Id="i6">
+               <CPEContent>cpe:/a:microsoft:iis:7.0</CPEContent>
+               <NVDId>74847</NVDId>
+               <Nodes>
+                  <Node z:Ref="i2" />
+               </Nodes>
+               <Nodes1 />
+               <PortNumber i:nil="true" />
+               <Ports />
+               <architecture i:nil="true" />
+               <certainity i:nil="true" />
+               <description i:nil="true" />
+               <family i:nil="true" />
+               <id>0</id>
+               <product>iis</product>
+               <vendor>microsoft</vendor>
+               <version>7.0</version>
+            </Software>
+         </Softwares>
+         <ThreatRiskAnalysisResults />
+         <ThreatStartingNodes />
+         <Vulnerabilities>
+            <Vulnerability z:Id="i7">
+               <IsSelected>false</IsSelected>
+               <Nodes />
+               <Ports />
+               <SolutionDefinitions />
+               <VulnerabilityDescriptions />
+               <VulnerabilityReferences />
+               <VulnerabilityRisk i:nil="true" />
+               <VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+               <cvss_a i:nil="true" />
+               <cvss_ac i:nil="true" />
+               <cvss_au i:nil="true" />
+               <cvss_av i:nil="true" />
+               <cvss_c i:nil="true" />
+               <cvss_e_score i:nil="true" />
+               <cvss_i i:nil="true" />
+               <cvss_i_score i:nil="true" />
+               <cvss_score i:nil="true" />
+               <dt_added i:nil="true" />
+               <dt_modified i:nil="true" />
+               <dt_published i:nil="true" />
+               <id>0</id>
+               <pci_severity i:nil="true" />
+               <severity>0</severity>
+               <title i:nil="true" />
+               <vulKey i:nil="true" />
+            </Vulnerability>
+         </Vulnerabilities>
+         <creationType>1</creationType>
+         <globalUniqeId i:nil="true" />
+         <id>0</id>
+         <ipaddress>111.111.111.111</ipaddress>
+         <macaddress>eeeeeeeeeeeeee</macaddress>
+         <name>test cihazı 1</name>
+         <status i:nil="true" />
+      </Node>
+   </Nodes>
+   <Site xmlns="" i:nil="true" />
+   <Site_id xmlns="">0</Site_id>
+   <id xmlns="">0</id>
+   <type xmlns="">1</type>
+</Device>

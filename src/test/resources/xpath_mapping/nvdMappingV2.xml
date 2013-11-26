@@ -1,0 +1,34 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="nvd/entry" ontology="CVE" domain="">
+            <dataProperties>
+                <dataProperty xpath="cve-id" ontology="id" domain="CVE"/>
+                <dataProperty xpath="published-datetime" ontology="publishedDate" domain="CVE"/>
+                <dataProperty xpath="last-modified-datetime" ontology="modifiedDate" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/score" ontology="score" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/access-vector" ontology="av" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/access-complexity" ontology="ac" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/authentication" ontology="au" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/confidentiality-impact" ontology="c" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/integrity-impact" ontology="i" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/availability-impact" ontology="a" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/source" ontology="source" domain="CVE"/>
+                <dataProperty xpath="cvss/base_metrics/generated-on-datetime" ontology="generatedTime" domain="CVE"/>
+                <dataProperty xpath="summary" ontology="summary" domain="CVE"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="references" ontology="CVEReference" domain="CVE">
+                    <dataProperties>
+                        <dataProperty xpath="source" ontology="source" domain="CVEReference"/>
+                        <dataProperty xpath="reference" ontology="reference" domain="CVEReference"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="vulnerable-software-list" ontology="CPE" domain="CVE">
+                    <dataProperties>
+                        <dataProperty xpath="product" ontology="product" domain="CPE"/>
+                    </dataProperties>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

@@ -1,0 +1,42 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="nvd/entry" ontology="Vulnerability" domain="">
+            <dataProperties>
+                <dataProperty xpath="@type" ontology="type" domain="Vulnerability"/>
+                <dataProperty xpath="@name" ontology="key" domain="Vulnerability"/>
+                <dataProperty xpath="@severity" ontology="severity" domain="Vulnerability"/>
+                <dataProperty xpath="@published" ontology="published" domain="Vulnerability"/>
+                <dataProperty xpath="@modified" ontology="modified" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_version" ontology="cvss_version" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_vector" ontology="cvss_vector" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_score" ontology="cvss_score" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_impact_subscore" ontology="cvss_impact" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_exploit_subscore" ontology="cvss_exploit" domain="Vulnerability"/>
+                <dataProperty xpath="@CVSS_base_score" ontology="cvss_base" domain="Vulnerability"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="desc/descript" ontology="VulnerabilityDescription" domain="Vulnerability">
+                    <dataProperties>
+                        <dataProperty xpath="@source" ontology="source" domain="VulnerabilityDescription"/>
+                        <dataProperty xpath="." ontology="description" domain="VulnerabilityDescription"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="refs/ref" ontology="VulnerabilityReference" domain="Vulnerability">
+                    <dataProperties>
+                        <dataProperty xpath="@url" ontology="url" domain="VulnerabilityReference"/>
+                        <dataProperty xpath="@source" ontology="source" domain="VulnerabilityReference"/>
+                        <dataProperty xpath="." ontology="reference" domain="VulnerabilityReference"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="vuln_soft/prod" ontology="VulnerabilityProduct" domain="Vulnerability">
+                    <dataProperties>
+                        <dataProperty xpath="@vendor" ontology="vendor" domain="VulnerabilityProduct"/>
+                        <dataProperty xpath="@name" ontology="name" domain="VulnerabilityProduct"/>
+                        <dataProperty xpath="vers/@edition" ontology="version" domain="VulnerabilityProduct"/>
+                        <dataProperty xpath="vers/@num" ontology="num" domain="VulnerabilityProduct"/>
+                    </dataProperties>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

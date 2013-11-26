@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<threat>
+    <threatDefiniton>
+        <id>1</id>
+        <name>Tehdit 1</name>
+        <targetSystems>
+            <system>
+                <avaliabilityAssesment>5</avaliabilityAssesment>
+                <baseRiskScore>56.833332</baseRiskScore>
+                <confidentialityAssesment>8</confidentialityAssesment>
+                <evaluatedRiskScore>71.01210600000007</evaluatedRiskScore>
+                <goal>1</goal>
+                <id>1</id>
+                <integrityAssesment>7</integrityAssesment>
+                <name>Test Sistem</name>
+                <subSystems/>
+                <systemNodes>
+                    <systemNode>
+                        <globalUniqeId>yyy-192.168.47.10</globalUniqeId>
+                    </systemNode>
+                </systemNodes>
+                <weight xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </system>
+        </targetSystems>
+        <threatSources>
+            <threatSource>
+                <id>1</id>
+                <ip xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <name>Saldırgan 1 </name>
+                <threatSourceNodes>
+                    <threatSourceNode>
+                        <ip>192.168.44.20</ip>
+                        <mac>000C29CFADB5</mac>
+                        <name>SUBNET04-02</name>
+                        <globalUniqeId>xxx-192.168.44.20</globalUniqeId>
+                    </threatSourceNode>
+                </threatSourceNodes>
+                <privileges>
+                    <privilege>
+                        <id>20</id>
+                        <value>Baglanti Seviyesi-Ag</value>
+                    </privilege>
+                </privileges>
+                <type>1</type>
+            </threatSource>
+            <threatSource>
+                <id>2</id>
+                <ip xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <name>Saldırgan 2</name>
+                <threatSourceNodes>
+                    <threatSourceNode>
+                        <ip>192.168.47.20</ip>
+                        <mac>000C29883D83</mac>
+                        <name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <globalUniqeId>yyy-192.168.47.20</globalUniqeId>
+                    </threatSourceNode>
+                </threatSourceNodes>
+                <privileges>
+                    <privilege>
+                        <id>20</id>
+                        <value>Baglanti Seviyesi-Ag</value>
+                    </privilege>
+                </privileges>
+                <type>1</type>
+            </threatSource>
+        </threatSources>
+    </threatDefiniton>
+    <networks>
+        <network>
+            <id>1</id>
+            <riskScore>
+                <evaluatedRiskScore>71.01210600000007</evaluatedRiskScore>
+            </riskScore>
+            <subnets>
+                <subnet>
+                    <endIP>192.168.40.255</endIP>
+                    <evaluatedRiskScore>71.01210600000007</evaluatedRiskScore>
+                    <id>2</id>
+                    <startIP>192.168.40.0</startIP>
+                </subnet>
+            </subnets>
+            <sites>
+                <site>
+                    <evaluatedRiskScore>71.01210600000007</evaluatedRiskScore>
+                    <globalUniqeId>yyy</globalUniqeId>
+                    <id>3</id>
+                    <Name>Site2</Name>
+                </site>
+            </sites>
+            <nodes>
+                <node>
+                    <evaluatedRiskScore>71.01210600000007</evaluatedRiskScore>
+                    <globalUniqeId>yyy-192.168.47.10</globalUniqeId>
+                    <id>2</id>
+                    <ip>192.168.47.10</ip>
+                    <Name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </node>
+            </nodes>
+        </network>
+    </networks>
+    <vulnerabilityEvalRisks>
+        <vulnerability>
+            <id>31706</id>
+            <riskscore>11.888100000000005</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>31710</id>
+            <riskscore>0.0</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6610</id>
+            <riskscore>4.100096000000005</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6641</id>
+            <riskscore>6.208230000000003</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6626</id>
+            <riskscore>0.0</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6623</id>
+            <riskscore>0.2</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>31722</id>
+            <riskscore>1.689600000000002</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6635</id>
+            <riskscore>9.225216000000012</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6628</id>
+            <riskscore>0.0</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6644</id>
+            <riskscore>0.0</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>6632</id>
+            <riskscore>0.8</riskscore>
+        </vulnerability>
+        <vulnerability>
+            <id>31679</id>
+            <riskscore>36.90086400000005</riskscore>
+        </vulnerability>
+    </vulnerabilityEvalRisks>
+</threat>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summary>
+	<network>
+		<orgUnitID>21</orgUnitID>
+		<orgUnitName>organizasyonel birim 21</orgUnitName>
+		<routers>
+			<router>
+				<ip>localhost</ip>
+				<desc>Hardware: Intel64 Family 6 Model 37 Stepping 5 AT/AT
+					COMPATIBLE - Software: Windows Version 6.1 (Build 7601
+					Multiprocessor Free)</desc>
+				<subnets>
+					<subnet>
+						<startIp>10.240.97.0</startIp>
+						<endIp>10.240.97.255</endIp>
+						<sites>
+							<site>
+								<id>1</id>
+								<name>site1</name>
+								<startIp>10.240.97.67</startIp>
+								<endIp>10.240.97.67</endIp>
+								<scanType>Automatic</scanType>
+								<scanStatus>NotScanned</scanStatus>
+							</site>
+						</sites>
+					</subnet>
+					<subnet>
+						<startIp>192.168.161.0</startIp>
+						<endIp>192.168.161.255</endIp>
+					</subnet>
+					<subnet>
+						<startIp>10.240.97.0</startIp>
+						<endIp>10.240.97.255</endIp>
+					</subnet>
+				</subnets>
+				<devices>
+					<device>
+
+						<ip>10.240.97.29</ip>
+						<type>L3 Switch</type>
+						<desc>Cisco IOS Software, C3560 Software (C3560-IPBASEK9-M),
+							Version 12.2(50)SE5, RELEASE SOFTWARE (fc1)&#xD;
+							Technical Support: http://www.cisco.com/techsupport&#xD;
+							Copyright (c) 1986-2010 by Cisco Systems, Inc.&#xD;
+							Compiled Tue 28-Sep-10 13:21 by prod_rel_team
+						</desc>
+						<subnets>
+
+							<subnet>
+								<startIp>192.168.10.0</startIp>
+								<endIp>192.168.10.255</endIp>
+							</subnet>
+							<subnet>
+								<startIp>192.168.20.0</startIp>
+								<endIp>192.168.20.255</endIp>
+							</subnet>
+							<subnet>
+								<startIp>192.168.30.0</startIp>
+								<endIp>192.168.30.255</endIp>
+							</subnet>
+							<subnet>
+								<startIp>192.168.40.0</startIp>
+								<endIp>192.168.40.255</endIp>
+							</subnet>
+						</subnets>
+					</device>
+					<device>
+						<ip>10.240.97.63</ip>
+						<type>Virtualized Host</type>
+						<desc>Hardware: Intel64 Family 6 Model 37 Stepping 2 AT/AT
+							COMPATIBLE - Software: Windows Version 6.1 (Build 7601
+							Multiprocessor Free)</desc>
+						<subnets>
+							<subnet>
+								<startIp>192.168.88.0</startIp>
+								<endIp>192.168.88.255</endIp>
+							</subnet>
+							<subnet>
+								<startIp>192.168.116.0</startIp>
+								<endIp>192.168.116.255</endIp>
+							</subnet>
+						</subnets>
+					</device>
+				</devices>
+			</router>
+		</routers>
+	</network>
+</summary>

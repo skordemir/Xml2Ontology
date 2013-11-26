@@ -1,0 +1,198 @@
+<topologySummaryWrapper>
+    <network>
+        <devices>
+            <device>
+                <ip>ÜğŞÇÜüğçı</ip>
+                <desc>Hardware: Intel64 Family 6 Model 45 Stepping 7 AT/AT COMPATIBLE - Software: Windows Version 6.1 (Build 7601 Multiprocessor Free)</desc>
+                <type>ÜğŞÇÜüğçı</type>
+                <subnets>
+                    <subnet>
+                        <startIp>192.168.42.0</startIp>
+                        <endIp>192.168.42.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.99.0</startIp>
+                        <endIp>192.168.99.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.41.0</startIp>
+                        <endIp>192.168.41.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.43.0</startIp>
+                        <endIp>192.168.43.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.40.0</startIp>
+                        <endIp>192.168.40.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.44.0</startIp>
+                        <endIp>192.168.44.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>192.168.45.0</startIp>
+                        <endIp>192.168.45.255</endIp>
+                    </subnet>
+                </subnets>
+                <devices>
+                    <device>
+                        <ip>192.168.42.100</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.42.101</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.41.100</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.41.101</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.41.102</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.41.103</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.45.100</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.45.101</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.43.10</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.43.20</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.99.2</ip>
+                        <type>Host</type>
+                        <desc>Linux cp 2.6.18-92cp #1 SMP Mon Feb 27 19:23:24 IST 2012 i686</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.2</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.10</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.20</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.30</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.154</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.40.253</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.44.100</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>192.168.44.101</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                </devices>
+            </device>
+            <device>
+                <ip>10.10.13.254</ip>
+                <desc>No desc</desc>
+                <type>Router</type>
+                <subnets/>
+                <devices>
+                    <device>
+                        <ip>10.10.13.25</ip>
+                        <type>Host</type>
+                        <desc>Linux cp 2.6.18-92cp #1 SMP Mon Feb 27 19:23:24 IST 2012 i686</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>200.200.200.1</ip>
+                        <type>Host</type>
+                        <desc>Linux cp 2.6.18-92cp #1 SMP Mon Feb 27 19:23:24 IST 2012 i686</desc>
+                        <devices/>
+                        <subnets/>
+                    </device>
+                </devices>
+            </device>
+        </devices>
+    </network>
+</topologySummaryWrapper>

@@ -1,0 +1,782 @@
+<Device xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1"
+	xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Common.Domain.Model">
+	<Nodes>
+		<Node z:Id="i2">
+			<BaseRiskScore i:nil="true" />
+			<Device i:nil="true" />
+			<Device_id i:nil="true" />
+			<EvalRiskScore i:nil="true" />
+			<NetworkDevices />
+			<NodeOperatingSystemSoftwares>
+				<Software z:Id="i3">
+					<CPEContent>microsoft:windows_7</CPEContent>
+					<NVDId>100461</NVDId>
+					<Nodes />
+					<Nodes1 />
+					<PortNumber i:nil="true" />
+					<Ports />
+					<architecture i:nil="true" />
+					<certainity i:nil="true" />
+					<description i:nil="true" />
+					<family i:nil="true" />
+					<id>0</id>
+					<product>windows_7</product>
+					<vendor>microsoft</vendor>
+					<version></version>
+				</Software>
+			</NodeOperatingSystemSoftwares>
+			<Ports />
+			<RiskNodes />
+			<Softwares>
+				<Service:Software z:Id="i4"
+					xmlns:Service="http://schemas.datacontract.org/2004/07/Common.Domain.Model">
+					<CPEContent>microsoft:iis:7.0</CPEContent>
+					<NVDId>74847</NVDId>
+					<Nodes>
+						<Node z:Ref="i2" />
+					</Nodes>
+					<Nodes1 />
+					<PortNumber>82</PortNumber>
+					<Ports>
+						<Port z:Id="i5">
+							<Node i:nil="true" />
+							<Node_id>0</Node_id>
+							<Service_id i:nil="true" />
+							<Softwares>
+								<Software z:Ref="i4" />
+							</Softwares>
+							<Vulnerabilities>
+								<Vulnerability z:Id="i6">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2006-5858</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i7">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-0074</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i8">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-1446</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i9">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-4300</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i10">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-4301</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i11">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2009-2521</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i12">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2009-3555</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i13">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2010-1256</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i14">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2010-1899</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i15">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2010-3332</vulKey>
+								</Vulnerability>
+							</Vulnerabilities>
+							<id>0</id>
+							<portNumber>82</portNumber>
+							<portProtocol i:nil="true" />
+						</Port>
+					</Ports>
+					<architecture i:nil="true" />
+					<certainity i:nil="true" />
+					<description i:nil="true" />
+					<family i:nil="true" />
+					<id>0</id>
+					<product>iis</product>
+					<vendor>microsoft</vendor>
+					<version>7.0</version>
+				</Service:Software>
+				<Service:Software z:Id="i16"
+					xmlns:Service="http://schemas.datacontract.org/2004/07/Common.Domain.Model">
+					<CPEContent>microsoft:iis:5.06</CPEContent>
+					<NVDId>104908</NVDId>
+					<Nodes>
+						<Node z:Ref="i2" />
+					</Nodes>
+					<Nodes1 />
+					<PortNumber>85</PortNumber>
+					<Ports>
+						<Port z:Id="i17">
+							<Node i:nil="true" />
+							<Node_id>0</Node_id>
+							<Service_id i:nil="true" />
+							<Softwares>
+								<Software z:Ref="i16" />
+							</Softwares>
+							<Vulnerabilities>
+								<Vulnerability z:Id="i18">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2006-5858</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i19">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-4300</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i20">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2008-4301</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i21">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2009-4444</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i22">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2009-4445</vulKey>
+								</Vulnerability>
+								<Vulnerability z:Id="i23">
+									<IsSelected>false</IsSelected>
+									<Nodes />
+									<Ports />
+									<SolutionDefinitions />
+									<VulnerabilityDescriptions />
+									<VulnerabilityReferences />
+									<VulnerabilityRisk i:nil="true" />
+									<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+									<cvss_a i:nil="true" />
+									<cvss_ac i:nil="true" />
+									<cvss_au i:nil="true" />
+									<cvss_av i:nil="true" />
+									<cvss_c i:nil="true" />
+									<cvss_e_score i:nil="true" />
+									<cvss_i i:nil="true" />
+									<cvss_i_score i:nil="true" />
+									<cvss_score i:nil="true" />
+									<dt_added i:nil="true" />
+									<dt_modified i:nil="true" />
+									<dt_published i:nil="true" />
+									<id>0</id>
+									<pci_severity i:nil="true" />
+									<severity>0</severity>
+									<title i:nil="true" />
+									<vulKey>CVE-2010-3332</vulKey>
+								</Vulnerability>
+							</Vulnerabilities>
+							<id>0</id>
+							<portNumber>85</portNumber>
+							<portProtocol i:nil="true" />
+						</Port>
+					</Ports>
+					<architecture i:nil="true" />
+					<certainity i:nil="true" />
+					<description i:nil="true" />
+					<family i:nil="true" />
+					<id>0</id>
+					<product>iis</product>
+					<vendor>microsoft</vendor>
+					<version>5.06</version>
+				</Service:Software>
+				<Software z:Id="i24">
+					<CPEContent>microsoft:iis:7.5</CPEContent>
+					<NVDId>126703</NVDId>
+					<Nodes>
+						<Node z:Ref="i2" />
+					</Nodes>
+					<Nodes1 />
+					<PortNumber i:nil="true" />
+					<Ports />
+					<architecture i:nil="true" />
+					<certainity i:nil="true" />
+					<description i:nil="true" />
+					<family i:nil="true" />
+					<id>0</id>
+					<product>iis</product>
+					<vendor>microsoft</vendor>
+					<version>7.5</version>
+				</Software>
+			</Softwares>
+			<Systems />
+			<ThreatRiskAnalysisResults />
+			<ThreatStartingNodes />
+			<Vulnerabilities>
+				<Vulnerability z:Id="i25">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2006-5858</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i26">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2008-4300</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i27">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2008-4301</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i28">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2010-1256</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i29">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2010-1899</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i30">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2010-2730</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i31">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2010-3332</vulKey>
+				</Vulnerability>
+				<Vulnerability z:Id="i32">
+					<IsSelected>false</IsSelected>
+					<Nodes />
+					<Ports />
+					<SolutionDefinitions />
+					<VulnerabilityDescriptions />
+					<VulnerabilityReferences />
+					<VulnerabilityRisk i:nil="true" />
+					<VulnerabilityRiskBaseScore>0</VulnerabilityRiskBaseScore>
+					<cvss_a i:nil="true" />
+					<cvss_ac i:nil="true" />
+					<cvss_au i:nil="true" />
+					<cvss_av i:nil="true" />
+					<cvss_c i:nil="true" />
+					<cvss_e_score i:nil="true" />
+					<cvss_i i:nil="true" />
+					<cvss_i_score i:nil="true" />
+					<cvss_score i:nil="true" />
+					<dt_added i:nil="true" />
+					<dt_modified i:nil="true" />
+					<dt_published i:nil="true" />
+					<id>0</id>
+					<pci_severity i:nil="true" />
+					<severity>0</severity>
+					<title i:nil="true" />
+					<vulKey>CVE-2010-3972</vulKey>
+				</Vulnerability>
+			</Vulnerabilities>
+			<creationType>1</creationType>
+			<globalUniqeId i:nil="true" />
+			<id>0</id>
+			<ipaddress>111111111111</ipaddress>
+			<macaddress>eeeeeeeeeeeeee</macaddress>
+			<name>Dummy PC</name>
+			<status i:nil="true" />
+		</Node>
+	</Nodes>
+	<Site i:nil="true" />
+	<Site_id>0</Site_id>
+	<id>0</id>
+	<type>1</type>
+</Device>

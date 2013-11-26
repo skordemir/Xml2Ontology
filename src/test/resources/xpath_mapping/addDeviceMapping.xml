@@ -1,0 +1,52 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="Site/Devices/Device" ontology="Node">
+            <dataProperties>
+                <dataProperty xpath="Nodes/Node/id" ontology="id" domain="Node"/>
+                <dataProperty xpath="Nodes/Node/ipaddress" ontology="ip" domain="Node"/>
+                <dataProperty xpath="Nodes/Node/creationType" ontology="creationType" domain="Node"/>
+                <dataProperty xpath="type" ontology="type" domain="Node"/>
+                <dataProperty xpath="Nodes/Node/macaddress" ontology="mac" domain="Node"/>
+                <dataProperty xpath="Nodes/Node/name" ontology="name" domain="Node"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="Nodes/Node/Vulnerabilities/Vulnerability" ontology="Vulnerability">
+                    <dataProperties>
+                        <dataProperty xpath="vulKey" ontology="key" domain="Vulnerability"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="Nodes/Node/Softwares/Software" ontology="Software">
+                    <dataProperties>
+                        <dataProperty xpath="product" ontology="product" domain="Software"/>
+                        <dataProperty xpath="version" ontology="version" domain="Software"/>
+                        <dataProperty xpath="vendor" ontology="vendor" domain="Software"/>
+                        <dataProperty xpath="architecture" ontology="architecture" domain="Software"/>
+                        <dataProperty xpath="CPEContent" ontology="description" domain="Software"/>
+                    </dataProperties>
+                </mapping>
+                <mapping xpath="Nodes/Node/Softwares//*[name()='Service:Software']" ontology="Port">
+                    <dataProperties>
+                        <dataProperty xpath="Ports/Port/portNumber" ontology="port" domain="Port"/>
+                        <dataProperty xpath="product" ontology="product" domain="Service"/>
+                        <dataProperty xpath="version" ontology="version" domain="Service"/>
+                        <dataProperty xpath="vendor" ontology="vendor" domain="Service"/>
+                        <dataProperty xpath="architecture" ontology="architecture" domain="Service"/>
+                        <dataProperty xpath="CPEContent" ontology="description" domain="Service"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="Vulnerabilities/Vulnerability" ontology="Vulnerability">
+                            <dataProperties>
+                                <dataProperty xpath="vulKey" ontology="key" domain="Vulnerability"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+                <mapping xpath="Nodes/Node/NodeOperatingSystemSoftwares/Software" ontology="OS">
+                    <dataProperties>
+                        <dataProperty xpath="CPEContent" ontology="product" domain="OS"/>
+                    </dataProperties>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

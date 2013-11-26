@@ -1,0 +1,287 @@
+<summary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <network>
+                               <orgUnitID>5</orgUnitID>
+                               <orgUnitName>Organizasyon 1</orgUnitName>
+                               <latitude>36.0</latitude>
+                               <longtitude>42.0</longtitude>
+                               <url>org1 url</url>
+                               <isFinalized>false</isFinalized>
+                               <devices>
+                                               <device>
+                                                               <id>39</id>
+                                                               <ip>10.10.13.254</ip>
+                                                               <type>3</type>
+                                                               <desc>No desc</desc>
+                                                               <firewallRules />
+                                                               <CVEList />
+                                                               <subnets />
+                                                               <devices>
+                                                                              <device>
+                                                                                              <id>40</id>
+                                                                                              <ip>10.10.13.25</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>44</id>
+                                                                                              <ip>192.168.45.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>59</id>
+                                                                                              <ip>1.1.1.4</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>IPS Test 6</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>45</id>
+                                                                                              <ip>192.168.42.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>47</id>
+                                                                                              <ip>192.168.39.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>57</id>
+                                                                                              <ip>1.1.1.2</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>IPS Test 4</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>55</id>
+                                                                                              <ip>10.10.13.27</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>IPS test</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>58</id>
+                                                                                              <ip>1.1.1.3</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>IPS Test 5</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>41</id>
+                                                                                              <ip>192.168.44.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>56</id>
+                                                                                              <ip>1.1.1.1</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>IPS Test 2</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>51</id>
+                                                                                              <ip>10.10.13.26</ip>
+                                                                                              <type>11</type>
+                                                                                              <desc />
+                                                                                              <firewallRules>
+                                                                                                              <rule>
+                                                                                                                             <id>35</id>
+                                                                                                                             <type>1</type>
+                                                                                                                             <protocol>any</protocol>
+                                                                                                                             <port />
+                                                                                                                             <sourceIp>Any</sourceIp>
+                                                                                                                             <targetIp>Subnet04_02_DisIP</targetIp>
+                                                                                                              </rule>
+                                                                                                              <rule>
+                                                                                                                             <id>34</id>
+                                                                                                                             <type>1</type>
+                                                                                                                             <protocol>any</protocol>
+                                                                                                                             <port />
+                                                                                                                             <sourceIp>Any</sourceIp>
+                                                                                                                             <targetIp>Subnet03_02_DisIP</targetIp>
+                                                                                                              </rule>
+                                                                                                              <rule>
+                                                                                                                             <id>33</id>
+                                                                                                                             <type>1</type>
+                                                                                                                             <protocol>any</protocol>
+                                                                                                                             <port />
+                                                                                                                             <sourceIp>Atak_Node_1</sourceIp>
+                                                                                                                             <targetIp>Any</targetIp>
+                                                                                                              </rule>
+                                                                                                              <rule>
+                                                                                                                             <id>30</id>
+                                                                                                                             <type>1</type>
+                                                                                                                             <protocol>any</protocol>
+                                                                                                                             <port />
+                                                                                                                             <sourceIp>Any</sourceIp>
+                                                                                                                             <targetIp>Subnet04_01_DisIP</targetIp>
+                                                                                                              </rule>
+                                                                                                              <rule>
+                                                                                                                             <id>32</id>
+                                                                                                                             <type>1</type>
+                                                                                                                             <protocol>any</protocol>
+                                                                                                                             <port />
+                                                                                                                             <sourceIp>Any</sourceIp>
+                                                                                                                             <targetIp>Subnet03_01_DisIP</targetIp>
+                                                                                                              </rule>
+                                                                                              </firewallRules>
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>42</id>
+                                                                                              <ip>192.168.40.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>46</id>
+                                                                                              <ip>192.168.43.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>43</id>
+                                                                                              <ip>192.168.41.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>0</id>
+                                                                                              <ip>1.1.1.5</ip>
+                                                                                              <type>5</type>
+                                                                                              <desc>dsafafa</desc>
+                                                                                              <firewallRules />
+                                                                                              <CVEList>
+                                                                                                              <cve>
+                                                                                                                             <id />
+                                                                                                                             <key>werdsa</key>
+                                                                                                              </cve>
+                                                                                              </CVEList>
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                               </devices>
+                                               </device>
+                                               <device>
+                                                               <id>48</id>
+                                                               <ip>192.168.46.1</ip>
+                                                               <type>3</type>
+                                                               <desc>FreeBSD pfSense.ob2.com.tr 8.1-RELEASE-p13 FreeBSD 8.1-RELEASE-p13 #0: Sat Dec  8 00:50:58 EST 2012     root@snapshots-8_1-amd64.builders.pfsense.org:/usr/obj./usr/pfSensesrc/src/sys/pfSense_SMP.8 amd64</desc>
+                                                               <firewallRules />
+                                                               <CVEList />
+                                                               <subnets>
+                                                                              <subnet>
+                                                                                              <id>14</id>
+                                                                                              <startIp>192.168.47.0</startIp>
+                                                                                              <endIp>192.168.47.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                                              <subnet>
+                                                                                              <id>11</id>
+                                                                                              <startIp>192.168.50.0</startIp>
+                                                                                              <endIp>192.168.50.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                                              <subnet>
+                                                                                              <id>12</id>
+                                                                                              <startIp>192.168.48.0</startIp>
+                                                                                              <endIp>192.168.48.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                                              <subnet>
+                                                                                              <id>13</id>
+                                                                                              <startIp>192.168.49.0</startIp>
+                                                                                              <endIp>192.168.49.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                                              <subnet>
+                                                                                              <id>9</id>
+                                                                                              <startIp>200.200.200.0</startIp>
+                                                                                              <endIp>200.200.200.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                                              <subnet>
+                                                                                              <id>10</id>
+                                                                                              <startIp>192.168.46.0</startIp>
+                                                                                              <endIp>192.168.46.255</endIp>
+                                                                                              <sites />
+                                                                              </subnet>
+                                                               </subnets>
+                                                               <devices>
+                                                                              <device>
+                                                                                              <id>49</id>
+                                                                                              <ip>200.200.200.1</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                                              <device>
+                                                                                              <id>50</id>
+                                                                                              <ip>192.168.46.20</ip>
+                                                                                              <type>1</type>
+                                                                                              <desc />
+                                                                                              <firewallRules />
+                                                                                              <CVEList />
+                                                                                              <subnets />
+                                                                                              <devices />
+                                                                              </device>
+                                                               </devices>
+                                               </device>
+                               </devices>
+                </network>
+</summary>

@@ -1,0 +1,2567 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2013/1/anelargeBSGS.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2013/1/anelargeBSGS.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2013/1/anelargeBSGS.owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="anelargeBSGS" IRI="http://www.semanticweb.org/ontologies/2013/1/anelargeBSGS.owl#"/>
+    <Declaration>
+        <Class IRI="#AgErisim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssetAccessibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssetTermination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviourCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CAuthentication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CAuthorizaton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CCommunicate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CFound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CHost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CIDS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CIDSNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CModify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CNetworkEquipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#COS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVEDetect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVEReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CategoryElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coklu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cokme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceGroupCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DosyaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erisim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirewallRules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HafizaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HizmetReddi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HizmetVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IDSHost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsletimSistemiBilgisiEdinme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KablosuzYerelAgUzerindenErisim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KimlikDogrulama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KullaniciYetkilendirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnSartSonuc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutcomeCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Port"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortBilgisiEdinme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privilege"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivilegeEscalation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RastgeleKodCalistirma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RootYetkilendirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityTokens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SignificanceCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemCokme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemDosyaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemHafizaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemHizmetReddi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subnet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechniqueCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tekli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThreatSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaCokme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaDosyaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaHafizaVarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaHizmetReddi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UygulamaVarlikBilgisiEdinme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VarlikDegistirme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VarlikErisimi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VulnerabilityReference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YerelErisim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yetkilendirme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cveCpe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cveReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deviceDetectCve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deviceHasFirewallRules"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deviceHasSubnet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrivilege"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isKindOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#networkDeviceHasDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#networkHasDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nodeHasOs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nodeHasPort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nodeHasSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nodeHasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nodeHasVulnerability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#originHasNetworks"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownedCVE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownerHost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#portHasVulnerability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#siteHasNodes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#subnetHasSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#systemHasNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#systemHasRisk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#systemHasTokens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#systemSubSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#theCVE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#thePrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threatHasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threatHasSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threatSourceHasNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vulnerabilityHasRisk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vulnerabilityReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#yapabilir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#yeterlidir"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#a"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ac"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accessVector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#architecture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#au"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#av"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#avaliability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#baseScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#certainty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confidentiality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cvelabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cvename"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endIp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#evalScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#family"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#generatedTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#guid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hostIP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#i"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#integrity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#key"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longtitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mac"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modifiedDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#onsart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#port"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#product"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#proof"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#protocol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publishedDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ref"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ruleType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scanType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceIp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startIp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#summary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#targetIp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#unitBaseScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#uptime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vendor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#version"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgErisimInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AssetAccessibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AssetTermination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CokluInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CokmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DosyaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DosyaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GuvenlikBilgileriVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HafizaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HafizaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HizmetReddiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HizmetVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IsletimSistemiBilgisiEdinmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KablosuzYerelAgUzerindenErisimIstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KimlikDogrulamaIstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KullaniciYetkilendirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KullaniciYetkisindeRastgeleKodCalistirmaInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PortBilgisiEdinmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PrivilegeEscalation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RastgeleKodCalistirmaInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RootYetkilendirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RootYetkisindeRastgeleKodCalistirmaInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemCokmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemDosyaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemHafizaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemHizmetReddiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemSeviyesiDosyaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SistemSeviyesiHafizaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TekliInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaCokmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaDosyaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaHafizaVarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaHizmetReddiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaSeviyesiDosyaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaSeviyesiHafizaVarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UygulamaVarlikBilgisiEdinmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VarlikBilgisiEdinmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VarlikDegistirmeInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VarlikErisimiInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YerelAgUzerindenErisimIstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YerelErisimInstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YetkilendirmeInstance"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AgErisim"/>
+        <Class IRI="#Erisim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgErisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#YerelAgUzerindenErisim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgErisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#YerelErisim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssetAccessibility"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssetTermination"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviourCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CAccess"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CActor"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CApplication"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CAuthentication"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CAuthorizaton"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CCommunicate"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CFound"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CHost"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CIDS"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CIDSNetwork"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CModify"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CNetworkEquipment"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#COS"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPE"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CResource"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVE"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVEDetect"/>
+        <Class IRI="#SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVEReference"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVector"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CategoryElements"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coklu"/>
+        <Class IRI="#KimlikDogrulama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coklu"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkilendirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cokme"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetTermination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceGroupCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+        <Class IRI="#VarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DosyaVarlikErisimi"/>
+        <Class IRI="#VarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erisim"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetAccessibility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirewallRules"/>
+        <Class IRI="#SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+        <Class IRI="#VarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+        <Class IRI="#VarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HafizaVarlikErisimi"/>
+        <Class IRI="#VarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HizmetReddi"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetTermination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HizmetVarlikErisimi"/>
+        <Class IRI="#VarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HizmetVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IDSHost"/>
+        <Class IRI="#CategoryElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsletimSistemiBilgisiEdinme"/>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KablosuzYerelAgUzerindenErisim"/>
+        <Class IRI="#Erisim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KimlikDogrulama"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KullaniciYetkilendirme"/>
+        <Class IRI="#Yetkilendirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KullaniciYetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkilendirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        <Class IRI="#RastgeleKodCalistirma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#KullaniciYetkilendirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkDevice"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Node"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OS"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnSartSonuc"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Origin"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutcomeCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Port"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortBilgisiEdinme"/>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Privilege"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivilegeEscalation"/>
+        <Class IRI="#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RastgeleKodCalistirma"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkilendirme"/>
+        <Class IRI="#Yetkilendirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        <Class IRI="#RastgeleKodCalistirma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkilendirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityDevice"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityTokens"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Service"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SignificanceCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemCokme"/>
+        <Class IRI="#Cokme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemDosyaVarlikErisimi"/>
+        <Class IRI="#DosyaVarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemDosyaVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHafizaVarlikErisimi"/>
+        <Class IRI="#HafizaVarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHafizaVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHizmetReddi"/>
+        <Class IRI="#HizmetReddi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemCokme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subnet"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechniqueCategory"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tekli"/>
+        <Class IRI="#KimlikDogrulama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tekli"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkilendirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threat"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThreatSource"/>
+        <Class IRI="#Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaCokme"/>
+        <Class IRI="#Cokme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemCokme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaCokme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaDosyaVarlikErisimi"/>
+        <Class IRI="#DosyaVarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaDosyaVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemDosyaVarlikErisimi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHafizaVarlikErisimi"/>
+        <Class IRI="#HafizaVarlikErisimi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHafizaVarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemHafizaVarlikErisimi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <Class IRI="#HizmetReddi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemHizmetReddi"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#UygulamaCokme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UygulamaVarlikBilgisiEdinme"/>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetAccessibility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikDegistirme"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikDegistirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetAccessibility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikErisimi"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VarlikErisimi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#AssetAccessibility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VulnerabilityReference"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+        <Class IRI="#Erisim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#yapabilir"/>
+            <Class IRI="#YerelErisim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerelErisim"/>
+        <Class IRI="#Erisim"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yetkilendirme"/>
+        <Class IRI="#OnSartSonuc"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yetkilendirme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#contains"/>
+            <Class IRI="#PrivilegeEscalation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DosyaVarlikErisimi"/>
+        <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+        <Class IRI="#HafizaVarlikErisimi"/>
+        <Class IRI="#HizmetVarlikErisimi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KullaniciYetkilendirme"/>
+        <Class IRI="#RootYetkilendirme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemCokme"/>
+        <Class IRI="#UygulamaCokme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemDosyaVarlikErisimi"/>
+        <Class IRI="#UygulamaDosyaVarlikErisimi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemHafizaVarlikErisimi"/>
+        <Class IRI="#UygulamaHafizaVarlikErisimi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemHizmetReddi"/>
+        <Class IRI="#UygulamaHizmetReddi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AgErisim"/>
+        <NamedIndividual IRI="#AgErisimInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssetAccessibility"/>
+        <NamedIndividual IRI="#AssetAccessibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AssetTermination"/>
+        <NamedIndividual IRI="#AssetTermination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coklu"/>
+        <NamedIndividual IRI="#CokluInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cokme"/>
+        <NamedIndividual IRI="#CokmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DosyaVarlikDegistirme"/>
+        <NamedIndividual IRI="#DosyaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DosyaVarlikErisimi"/>
+        <NamedIndividual IRI="#DosyaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GuvenlikBilgileriVarlikErisimi"/>
+        <NamedIndividual IRI="#GuvenlikBilgileriVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HafizaVarlikDegistirme"/>
+        <NamedIndividual IRI="#HafizaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HafizaVarlikErisimi"/>
+        <NamedIndividual IRI="#HafizaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HizmetReddi"/>
+        <NamedIndividual IRI="#HizmetReddiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HizmetVarlikErisimi"/>
+        <NamedIndividual IRI="#HizmetVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IsletimSistemiBilgisiEdinme"/>
+        <NamedIndividual IRI="#IsletimSistemiBilgisiEdinmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KablosuzYerelAgUzerindenErisim"/>
+        <NamedIndividual IRI="#KablosuzYerelAgUzerindenErisimIstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KimlikDogrulama"/>
+        <NamedIndividual IRI="#KimlikDogrulamaIstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KullaniciYetkilendirme"/>
+        <NamedIndividual IRI="#KullaniciYetkilendirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KullaniciYetkisindeRastgeleKodCalistirma"/>
+        <NamedIndividual IRI="#KullaniciYetkisindeRastgeleKodCalistirmaInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PortBilgisiEdinme"/>
+        <NamedIndividual IRI="#PortBilgisiEdinmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrivilegeEscalation"/>
+        <NamedIndividual IRI="#PrivilegeEscalation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RastgeleKodCalistirma"/>
+        <NamedIndividual IRI="#RastgeleKodCalistirmaInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootYetkilendirme"/>
+        <NamedIndividual IRI="#RootYetkilendirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RootYetkisindeRastgeleKodCalistirma"/>
+        <NamedIndividual IRI="#RootYetkisindeRastgeleKodCalistirmaInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemCokme"/>
+        <NamedIndividual IRI="#SistemCokmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemDosyaVarlikErisimi"/>
+        <NamedIndividual IRI="#SistemDosyaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemHafizaVarlikErisimi"/>
+        <NamedIndividual IRI="#SistemHafizaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemHizmetReddi"/>
+        <NamedIndividual IRI="#SistemHizmetReddiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemSeviyesiDosyaVarlikDegistirme"/>
+        <NamedIndividual IRI="#SistemSeviyesiDosyaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SistemSeviyesiHafizaVarlikDegistirme"/>
+        <NamedIndividual IRI="#SistemSeviyesiHafizaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tekli"/>
+        <NamedIndividual IRI="#TekliInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaCokme"/>
+        <NamedIndividual IRI="#UygulamaCokmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaDosyaVarlikErisimi"/>
+        <NamedIndividual IRI="#UygulamaDosyaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaHafizaVarlikErisimi"/>
+        <NamedIndividual IRI="#UygulamaHafizaVarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaHizmetReddi"/>
+        <NamedIndividual IRI="#UygulamaHizmetReddiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaSeviyesiDosyaVarlikDegistirme"/>
+        <NamedIndividual IRI="#UygulamaSeviyesiDosyaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaSeviyesiHafizaVarlikDegistirme"/>
+        <NamedIndividual IRI="#UygulamaSeviyesiHafizaVarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UygulamaVarlikBilgisiEdinme"/>
+        <NamedIndividual IRI="#UygulamaVarlikBilgisiEdinmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VarlikBilgisiEdinme"/>
+        <NamedIndividual IRI="#VarlikBilgisiEdinmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VarlikDegistirme"/>
+        <NamedIndividual IRI="#VarlikDegistirmeInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VarlikErisimi"/>
+        <NamedIndividual IRI="#VarlikErisimiInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#YerelAgUzerindenErisim"/>
+        <NamedIndividual IRI="#YerelAgUzerindenErisimIstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#YerelErisim"/>
+        <NamedIndividual IRI="#YerelErisimInstance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yetkilendirme"/>
+        <NamedIndividual IRI="#YetkilendirmeInstance"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ownedCVE"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ownerHost"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#theCVE"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#thePrerequisite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#yapabilir"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#yeterlidir"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isKindOf"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#yeterlidir"/>
+        <ObjectProperty IRI="#yapabilir"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isKindOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isKindOf"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#yapabilir"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#yeterlidir"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cveCpe"/>
+        <Class IRI="#CVE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cveReference"/>
+        <Class IRI="#CVE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deviceDetectCve"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deviceHasFirewallRules"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deviceHasSubnet"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrivilege"/>
+        <Class IRI="#ThreatSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isKindOf"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#networkDeviceHasDevice"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#networkHasDevice"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nodeHasOs"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nodeHasPort"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nodeHasSoftware"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nodeHasType"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nodeHasVulnerability"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#originHasNetworks"/>
+        <Class IRI="#Origin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#portHasVulnerability"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runService"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#siteHasNodes"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#subnetHasSite"/>
+        <Class IRI="#Subnet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#systemHasNode"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#systemHasRisk"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#systemHasTokens"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#systemSubSystem"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#threatHasSource"/>
+        <Class IRI="#Threat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#threatHasSystem"/>
+        <Class IRI="#Threat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#threatSourceHasNode"/>
+        <Class IRI="#ThreatSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vulnerabilityHasRisk"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vulnerabilityReference"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#yapabilir"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#yeterlidir"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cveCpe"/>
+        <Class IRI="#CPE"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cveReference"/>
+        <Class IRI="#CVEReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deviceDetectCve"/>
+        <Class IRI="#CVEDetect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deviceHasFirewallRules"/>
+        <Class IRI="#FirewallRules"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deviceHasSubnet"/>
+        <Class IRI="#Subnet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrivilege"/>
+        <Class IRI="#Privilege"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isKindOf"/>
+        <Class IRI="#Goal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#networkDeviceHasDevice"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#networkHasDevice"/>
+        <Class IRI="#NetworkDevice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nodeHasOs"/>
+        <Class IRI="#OS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nodeHasPort"/>
+        <Class IRI="#Port"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nodeHasSoftware"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nodeHasVulnerability"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#originHasNetworks"/>
+        <Class IRI="#Network"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#portHasVulnerability"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runService"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#siteHasNodes"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#subnetHasSite"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#systemHasNode"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#systemHasRisk"/>
+        <Class IRI="#Risk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#systemHasTokens"/>
+        <Class IRI="#SecurityTokens"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#systemSubSystem"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#thePrerequisite"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#threatHasSource"/>
+        <Class IRI="#ThreatSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#threatHasSystem"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#threatSourceHasNode"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vulnerabilityHasRisk"/>
+        <Class IRI="#Risk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vulnerabilityReference"/>
+        <Class IRI="#VulnerabilityReference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#yapabilir"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#yeterlidir"/>
+        <Class IRI="#OnSartSonuc"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#a"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ac"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accessVector"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#architecture"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#architecture"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#architecture"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#architecture"/>
+        <Class IRI="#OS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#au"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#av"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#avaliability"/>
+        <Class IRI="#SecurityTokens"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseScore"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseScore"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseScore"/>
+        <Class IRI="#Risk"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseScore"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#baseScore"/>
+        <Class IRI="#Subnet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#c"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#certainty"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#confidentiality"/>
+        <Class IRI="#SecurityTokens"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#creationType"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endIp"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endIp"/>
+        <Class IRI="#Subnet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#evalScore"/>
+        <Class IRI="#Risk"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#family"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#generatedTime"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#guid"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#guid"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#i"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#CVEDetect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Origin"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Privilege"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Subnet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Threat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#ThreatSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#VulnerabilityReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#integrity"/>
+        <Class IRI="#SecurityTokens"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ip"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ip"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ip"/>
+        <Class IRI="#ThreatSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#key"/>
+        <Class IRI="#CVEDetect"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#key"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#key"/>
+        <Class IRI="#VulnerabilityReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitude"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longtitude"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mac"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mac"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#method"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modifiedDate"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Privilege"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Threat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#ThreatSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#port"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#port"/>
+        <Class IRI="#Port"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#product"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#product"/>
+        <Class IRI="#CPE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#proof"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#protocol"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#protocol"/>
+        <Class IRI="#Port"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publishedDate"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ref"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reference"/>
+        <Class IRI="#CVEReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ruleType"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scanType"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#score"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#CVEReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceIp"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#startIp"/>
+        <Class IRI="#Site"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#startIp"/>
+        <Class IRI="#Subnet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Port"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Vulnerability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#summary"/>
+        <Class IRI="#CVE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#targetIp"/>
+        <Class IRI="#FirewallRules"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#Origin"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#ThreatSource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#VulnerabilityReference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#unitBaseScore"/>
+        <Class IRI="#Risk"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uptime"/>
+        <Class IRI="#NetworkDevice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#uptime"/>
+        <Class IRI="#Node"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vendor"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#version"/>
+        <Class IRI="#Application"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#System"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#a"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ac"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#accessVector"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#architecture"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#au"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#av"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#avaliability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#baseScore"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#c"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#certainty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#confidentiality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#creationType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cvelabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cvename"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endIp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#evalScore"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#family"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#generatedTime"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#guid"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hostIP"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#i"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#integrity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ip"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#key"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longtitude"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mac"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#method"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modifiedDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#onsart"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#port"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#product"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#proof"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#protocol"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publishedDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ref"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ruleType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scanType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#score"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceIp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startIp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#summary"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#targetIp"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#unitBaseScore"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#uptime"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#vendor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#version"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<summary>
+    <network>
+        <routers>
+            <router>
+                <ip>10.240.97.1</ip>
+                <desc>Hardware: Intel64 Family 6 Model 23 Stepping 6 AT/AT COMPATIBLE - Software: Windows Version 6.1
+                    (Build 7601 Multiprocessor Free)
+                </desc>
+                <subnets>
+                    <subnet>
+                        <startIp>10.240.97.0</startIp>
+                        <endIp>10.240.97.255</endIp>
+                    </subnet>
+                    <subnet>
+                        <startIp>172.36.254.0</startIp>
+                        <endIp>172.36.254.255</endIp>
+                    </subnet>
+                </subnets>
+                <devices>
+                    <device>
+                        <ip>172.36.254.1</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>172.36.254.3</ip>
+                        <type>L7 application Switch or Router</type>
+                        <desc>Cisco IOS Software, 2801 Software (C2801-SPSERVICESK9-M), Version 12.4(24)T, RELEASE
+                            SOFTWARE (fc1)&#xD;
+                            Technical Support: http://www.cisco.com/techsupport&#xD;
+                            Copyright (c) 1986-2009 by Cisco Systems, Inc.&#xD;
+                            Compiled Wed 25-Feb-09 19:34 by prod_rel_team
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.2</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.3</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.4</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.5</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.7</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.11</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.12</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.17</ip>
+                        <type>Host</type>
+                        <desc>Linux ubuntusrv 2.6.32-35-generic #78-Ubuntu SMP Tue Oct 11 16:11:24 UTC 2011 x86_64
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.24</ip>
+                        <type>Virtualized Host</type>
+                        <desc>Linux hazards.MAIN2 2.6.32-220.2.1.el6.x86_64 #1 SMP Fri Dec 23 02:21:33 CST 2011 x86_64
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>192.168.1.0</startIp>
+                                <endIp>192.168.1.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.122.0</startIp>
+                                <endIp>192.168.122.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                    <device>
+                        <ip>10.240.97.25</ip>
+                        <type>Virtualized Host</type>
+                        <desc>Linux hazards1.anelarge.com.tr 2.6.32-220.2.1.el6.x86_64 #1 SMP Fri Dec 23 02:21:33 CST
+                            2011 x86_64
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>192.168.2.0</startIp>
+                                <endIp>192.168.2.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.7.0</startIp>
+                                <endIp>192.168.7.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.122.0</startIp>
+                                <endIp>192.168.122.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                    <device>
+                        <ip>10.240.97.26</ip>
+                        <type>Host</type>
+                        <desc>Linux todesanel 2.6.32-42-generic #96-Ubuntu SMP Wed Aug 15 19:37:37 UTC 2012 x86_64
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.27</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.28</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.29</ip>
+                        <type>L3 Switch</type>
+                        <desc>Cisco IOS Software, C3560 Software (C3560-IPBASEK9-M), Version 12.2(50)SE5, RELEASE
+                            SOFTWARE (fc1)&#xD;
+                            Technical Support: http://www.cisco.com/techsupport&#xD;
+                            Copyright (c) 1986-2010 by Cisco Systems, Inc.&#xD;
+                            Compiled Tue 28-Sep-10 13:21 by prod_rel_team
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>192.168.10.0</startIp>
+                                <endIp>192.168.10.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.20.0</startIp>
+                                <endIp>192.168.20.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.30.0</startIp>
+                                <endIp>192.168.30.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.40.0</startIp>
+                                <endIp>192.168.40.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                    <device>
+                        <ip>10.240.97.30</ip>
+                        <type>Host</type>
+                        <desc>Linux editor 3.0.0-26-server #43-Ubuntu SMP Tue Sep 25 17:37:40 UTC 2012 x86_64</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.32</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.36</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.37</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.40</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.41</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.43</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.44</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.45</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.46</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.47</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.48</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.49</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.50</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.51</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.52</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.53</ip>
+                        <type>Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 42 Stepping 7 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.1 (Build 7601 Multiprocessor Free)
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.54</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.55</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.57</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.58</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.59</ip>
+                        <type>Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 42 Stepping 7 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.1 (Build 7601 Multiprocessor Free)
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.60</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.61</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.62</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.63</ip>
+                        <type>Virtualized Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 37 Stepping 2 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.1 (Build 7601 Multiprocessor Free)
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>192.168.88.0</startIp>
+                                <endIp>192.168.88.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.116.0</startIp>
+                                <endIp>192.168.116.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                    <device>
+                        <ip>10.240.97.64</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.65</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.67</ip>
+                        <type>Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 42 Stepping 7 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.2 (Build 9200 Multiprocessor Free)
+                        </desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.68</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.69</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.70</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.71</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.72</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.73</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.74</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.76</ip>
+                        <type>Virtualized Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 37 Stepping 5 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.1 (Build 7601 Multiprocessor Free)
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>192.168.161.0</startIp>
+                                <endIp>192.168.161.255</endIp>
+                            </subnet>
+                            <subnet>
+                                <startIp>192.168.174.0</startIp>
+                                <endIp>192.168.174.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                    <device>
+                        <ip>10.240.97.77</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.78</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.79</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.81</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.83</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.84</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.85</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.86</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.87</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.88</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.89</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.90</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.92</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.94</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.95</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.97</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.99</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.102</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.103</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.104</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.106</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.109</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.111</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.113</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.114</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.116</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.117</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.118</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.120</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.121</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.122</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.124</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>10.240.97.133</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                </devices>
+            </router>
+            <router>
+                <ip>172.36.254.3</ip>
+                <desc>Cisco IOS Software, 2801 Software (C2801-SPSERVICESK9-M), Version 12.4(24)T, RELEASE SOFTWARE
+                    (fc1)&#xD;
+                    Technical Support: http://www.cisco.com/techsupport&#xD;
+                    Copyright (c) 1986-2009 by Cisco Systems, Inc.&#xD;
+                    Compiled Wed 25-Feb-09 19:34 by prod_rel_team
+                </desc>
+                <subnets>
+                    <subnet>
+                        <startIp>172.36.254.0</startIp>
+                        <endIp>172.36.254.255</endIp>
+                    </subnet>
+                </subnets>
+                <devices>
+                    <device>
+                        <ip>172.36.254.1</ip>
+                        <type>Host</type>
+                        <desc>No desc</desc>
+                        <subnets/>
+                    </device>
+                    <device>
+                        <ip>172.36.254.2</ip>
+                        <type>Virtualized Host</type>
+                        <desc>Hardware: Intel64 Family 6 Model 23 Stepping 6 AT/AT COMPATIBLE - Software: Windows
+                            Version 6.1 (Build 7601 Multiprocessor Free)
+                        </desc>
+                        <subnets>
+                            <subnet>
+                                <startIp>10.240.97.0</startIp>
+                                <endIp>10.240.97.255</endIp>
+                            </subnet>
+                        </subnets>
+                    </device>
+                </devices>
+            </router>
+        </routers>
+    </network>
+</summary>

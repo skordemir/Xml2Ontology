@@ -1,0 +1,58 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="//network" ontology="Network">
+            <dataProperties>
+                <dataProperty xpath="orgUnitID" ontology="id" domain="Network"/>
+                <dataProperty xpath="orgUnitName" ontology="name" domain="Network"/>
+                <dataProperty xpath="url" ontology="url" domain="Network"/>
+                <dataProperty xpath="longtitude" ontology="longtitude" domain="Network"/>
+                <dataProperty xpath="latitude" ontology="latitude" domain="Network"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="devices/device" ontology="NetworkDevice">
+                    <dataProperties>
+                        <dataProperty xpath="id" ontology="id" domain="NetworkDevice"/>
+                        <dataProperty xpath="ip" ontology="ip" domain="NetworkDevice"/>
+						<dataProperty xpath="desc" ontology="description" domain="NetworkDevice"/>
+						<dataProperty xpath="type" ontology="type" domain="NetworkDevice" />
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="subnets/subnet" ontology="Subnet">
+                            <dataProperties>
+                                <dataProperty xpath="startIp" ontology="startIp" domain="Subnet"/>
+                                <dataProperty xpath="endIp" ontology="endIp" domain="Subnet"/>
+                                <dataProperty xpath="id" ontology="id" domain="Subnet"/>
+                            </dataProperties>
+                            <mappings>
+                                <mapping xpath="sites/site" ontology="Site">
+                                    <dataProperties>
+                                        <dataProperty xpath="startIp" ontology="startIp" domain="Site"/>
+                                        <dataProperty xpath="endIp" ontology="endIp" domain="Site"/>
+                                        <dataProperty xpath="id" ontology="id" domain="Site"/>
+                                        <dataProperty xpath="name" ontology="name" domain="Site"/>
+                                    </dataProperties>
+                                </mapping>
+                            </mappings>
+                        </mapping>
+                        <mapping xpath="firewallRules/rule" ontology="FirewallRules">
+                            <dataProperties>
+                                <dataProperty xpath="type" ontology="ruleType" domain="FirewallRules"/>
+                                <dataProperty xpath="protocol" ontology="protocol" domain="FirewallRules"/>
+                                <dataProperty xpath="portNumber" ontology="port" domain="FirewallRules"/>
+                                <dataProperty xpath="sourceIp" ontology="sourceIp" domain="FirewallRules"/>
+                                <dataProperty xpath="targetIp" ontology="targetIp" domain="FirewallRules"/>
+                                <dataProperty xpath="id" ontology="id" domain="FirewallRules"/>
+                            </dataProperties>
+                        </mapping>
+                        <mapping xpath="CVEList/cve" ontology="CVEDetect">
+                            <dataProperties>
+                                <dataProperty xpath="key" ontology="key" domain="CVEDetect"/>
+                                <dataProperty xpath="id" ontology="id" domain="CVEDetect"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

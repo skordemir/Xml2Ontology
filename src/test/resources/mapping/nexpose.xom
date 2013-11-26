@@ -1,0 +1,36 @@
+<xmltoOntology>
+<classPropertyMapping>
+	<mapping xpath = "/NexposeReport/nodes/node" ontology = "Node"/>
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os" ontology = "OS"/>	
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint" ontology = "Port"/>
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service" ontology = "Service"/>
+	<mapping xpath = "/NexposeReport/nodes/node/tests/test" ontology ="Vulnerability" domain="Node"/>
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service/tests/test" ontology = "Vulnerability" domain="Port"/>
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint" ontology="Software" />
+</classPropertyMapping>
+<dataPropertyMapping >
+	<mapping xpath = "/NexposeReport/nodes/node/@status" ontology = "status" range="Node" />
+	<mapping xpath = "/NexposeReport/nodes/node/@address" ontology = "address" range="Address" />
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint/@product" ontology = "product" range="Software" />
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint/@version" ontology = "version" range="Software" />
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint/@vendor" ontology = "vendor" range="Software" />
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint/@family" ontology = "family" range="Software" />
+	<mapping xpath = "/NexposeReport/nodes/node/software/fingerprint/@certainity" ontology = "certainity" range="Software" />
+	<mapping xpath = "/NexposeReport/nodes/node/tests/test/@id" ontology = "vulnerabilityKey" range="Vulnerability" />
+	<mapping xpath = "/NexposeReport/nodes/node/tests/test/@status" ontology = "vulnerabilityStatus" range="Vulnerability" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service/tests/test/@id" ontology = "vulnerabilityKey" range="Vulnerability" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service/tests/test/@status" ontology = "vulnerabilityStatus" range="Vulnerability" />
+	<mapping xpath = "/NexposeReport/nodes/node/@hardware-address" ontology = "address" range="Address" />
+	<mapping xpath = "/NexposeReport/nodes/node/names/@name" ontology = "nodeName" range="" />
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os/@family" ontology = "family" range="OS" />
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os/@vendor" ontology = "vendor" range="OS" />
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os/@certainty" ontology = "certainity" range="OS" />
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os/@product" ontology = "product" range="OS" />
+	<mapping xpath = "/NexposeReport/nodes/node/fingerprints/os/@version" ontology = "version" range="OS" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/@protocol" ontology = "portProtocol" range="Port" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/@port" ontology = "portNumber" range="Port" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/@status" ontology = "portState" range="Port" />
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service/@name" ontology = "serviceName" range="Service" />	
+	<mapping xpath = "/NexposeReport/nodes/node/endpoints/endpoint/services/service/configuration/config/@name" ontology = "cfgValue" range="Service" />
+</dataPropertyMapping>
+</xmltoOntology>

@@ -1,0 +1,34 @@
+<xmltoOntology>
+<classPropertyMapping>
+	<mapping xpath = "/nmaprun/host" ontology = "Node"/>
+	<mapping xpath = "/nmaprun/host/address" ontology = "Address"/>
+	<mapping xpath = "/nmaprun/host/ports/port" ontology = "Port"/>
+	<mapping xpath = "/nmaprun/host/os/osclass" ontology = "OS"/>
+	<mapping xpath = "/nmaprun/host/trace" ontology = "Trace"/>
+	<mapping xpath = "/nmaprun/host/ports/port/service" ontology = "Service"/>
+</classPropertyMapping>
+<dataPropertyMapping >
+	<mapping xpath = "/nmaprun/host/status/@state" ontology = "status" range="Node" />
+	<mapping xpath = "/nmaprun/host/uptime/@seconds" ontology = "uptime" range="Node" />
+	<mapping xpath = "/nmaprun/host/address/@addrtype" ontology = "addressType" range="Address" />
+	<mapping xpath = "/nmaprun/host/address/@addr" ontology = "address" range="Address" />
+	<mapping xpath = "/nmaprun/host/address/@vendor" ontology = "vendor" range="Address" />
+	<mapping xpath = "/nmaprun/host/hostnames/@name" ontology = "nodeName" range="Node" />
+	<mapping xpath = "/nmaprun/host/ports/port/@protocol" ontology = "portProtocol" range="Port" />
+	<mapping xpath = "/nmaprun/host/ports/port/@portid" ontology = "portNumber" range="Port" />
+	<mapping xpath = "/nmaprun/host/ports/port/@state" ontology = "portState" range="Port" />
+	<mapping xpath = "/nmaprun/host/ports/port/service/@product" ontology = "product" range="Service" />
+	<mapping xpath = "/nmaprun/host/ports/port/service/@name" ontology = "serviceName" range="Service" />
+	<mapping xpath = "/nmaprun/host/ports/port/service/@version" ontology = "version" range="Service" />
+	<mapping xpath = "/nmaprun/host/ports/port/service/@method" ontology = "serviceMethod" range="Service" />
+	<mapping xpath = "/nmaprun/host/ports/port/service/@conf" ontology = "cfgValue" range="Service" />
+	<mapping xpath = "/nmaprun/host/trace/hop/@rtt" ontology = "hopRTT" range="Trace" />
+	<mapping xpath = "/nmaprun/host/trace/hop/@ipaddr" ontology = "hopIP" range="Trace" />
+	<mapping xpath = "/nmaprun/host/trace/hop/@host" ontology = "hopHOST" range="Trace" />
+	<mapping xpath = "/nmaprun/host/trace/hop/@ttl" ontology = "hopTTL" range="Trace" />
+	<mapping xpath = "/nmaprun/host/os/osclass/@osfamily" ontology = "family" range="OS" />
+	<mapping xpath = "/nmaprun/host/os/osclass/@vendor" ontology = "vendor" range="OS" />
+	<mapping xpath = "/nmaprun/host/os/osclass/@accuracy" ontology = "certainity" range="OS" />
+	<mapping xpath = "/nmaprun/host/os/osclass/@type" ontology = "type" range="NodeType" />
+</dataPropertyMapping>
+</xmltoOntology>

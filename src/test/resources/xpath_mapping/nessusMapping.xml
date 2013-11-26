@@ -1,0 +1,22 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="/NessusClientData_v2/Report/ReportHost" ontology="Node">
+            <dataProperties>
+                <dataProperty xpath="HostProperties/tag[1]" ontology="type" domain="Node"/>
+                <dataProperty xpath="HostProperties/tag[4]" ontology="mac" domain="Node"/>
+                <dataProperty xpath="HostProperties/tag[5]" ontology="mac" domain="Node"/>
+                <dataProperty xpath="HostProperties/tag[6]" ontology="mac" domain="Node"/>
+                <dataProperty xpath="HostProperties/tag[3]" ontology="product" domain="OS"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="ReportItem" ontology="Port">
+                    <dataProperties>
+                        <dataProperty xpath="@port" ontology="port" domain="Port"/>
+                        <dataProperty xpath="@protocol" ontology="protocol" domain="Port"/>
+                        <dataProperty xpath="cve" ontology="key" domain="Vulnerability"/>
+                    </dataProperties>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

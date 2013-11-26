@@ -1,0 +1,162 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="//networks/network" ontology="Network">
+            <dataProperties>
+                <dataProperty xpath="orgUnitID" ontology="id" domain="Network"/>
+                <dataProperty xpath="orgUnitName" ontology="name" domain="Network"/>
+                <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Network"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="devices/networkDevice" ontology="NetworkDevice">
+                    <dataProperties>
+                        <dataProperty xpath="id" ontology="id" domain="NetworkDevice"/>
+                        <dataProperty xpath="ip" ontology="ip" domain="NetworkDevice"/>
+                        <dataProperty xpath="type" ontology="type" domain="NetworkDevice"/>
+                        <dataProperty xpath="name" ontology="name" domain="NetworkDevice"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="subnets/subnet" ontology="Subnet">
+                            <dataProperties>
+                                <dataProperty xpath="startIp" ontology="startIp" domain="Subnet"/>
+                                <dataProperty xpath="endIp" ontology="endIp" domain="Subnet"/>
+                                <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Subnet"/>
+                                <dataProperty xpath="id" ontology="id" domain="Subnet"/>
+                            </dataProperties>
+                            <mappings>
+                                <mapping xpath="sites/site" ontology="Site">
+                                    <dataProperties>
+                                        <dataProperty xpath="startIp" ontology="startIp" domain="Site"/>
+                                        <dataProperty xpath="endIp" ontology="endIp" domain="Site"/>
+                                        <dataProperty xpath="id" ontology="id" domain="Site"/>
+                                        <dataProperty xpath="name" ontology="name" domain="Site"/>
+                                        <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Site"/>
+                                        <dataProperty xpath="globalUniqeId" ontology="guid" domain="Site"/>
+                                    </dataProperties>
+                                    <mappings>
+                                        <mapping xpath="nodes/node" ontology="Node">
+                                            <dataProperties>
+                                                <dataProperty xpath="name" ontology="name" domain="Node"/>
+                                                <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Node"/>
+                                                <dataProperty xpath="type" ontology="type" domain="Node"/>
+                                                <dataProperty xpath="mac" ontology="mac" domain="Node"/>
+                                                <dataProperty xpath="id" ontology="id" domain="Node"/>
+                                                <dataProperty xpath="globalUniqeId" ontology="guid" domain="Node"/>
+                                                <dataProperty xpath="ip" ontology="ip" domain="Node"/>
+                                            </dataProperties>
+                                            <mappings>
+                                                <mapping xpath="ports/port" ontology="Port">
+                                                    <dataProperties>
+                                                        <dataProperty xpath="portNumber" ontology="port" domain="Port"/>
+                                                        <dataProperty xpath="portProtocol" ontology="protocol"
+                                                                      domain="Port"/>
+                                                    </dataProperties>
+                                                    <mappings>
+                                                        <mapping xpath="service" ontology="Service">
+                                                            <dataProperties>
+                                                                <dataProperty xpath="product" ontology="product"
+                                                                              domain="Service"/>
+                                                                <dataProperty xpath="version" ontology="version"
+                                                                              domain="Service"/>
+                                                                <dataProperty xpath="vendor" ontology="vendor"
+                                                                              domain="Service"/>
+                                                                <dataProperty xpath="architecture"
+                                                                              ontology="architecture" domain="Service"/>
+                                                                <dataProperty xpath="description" ontology="description"
+                                                                              domain="Service"/>
+                                                            </dataProperties>
+                                                        </mapping>
+                                                        <mapping xpath="vulnerabilities/vulnerability"
+                                                                 ontology="Vulnerability">
+                                                            <dataProperties>
+                                                                <dataProperty xpath="key" ontology="id"
+                                                                              domain="Vulnerability"/>
+                                                                <dataProperty xpath="accessVector"
+                                                                              ontology="accessVector"
+                                                                              domain="Vulnerability"/>
+                                                            </dataProperties>
+                                                            <mappings>
+                                                                <mapping xpath="references/reference"
+                                                                         ontology="VulnerabilityReference">
+                                                                    <dataProperties>
+                                                                        <dataProperty xpath="id" ontology="id"
+                                                                                      domain="VulnerabilityReference"/>
+                                                                        <dataProperty xpath="key" ontology="key"
+                                                                                      domain="VulnerabilityReference"/>
+                                                                        <dataProperty xpath="source" ontology="type"
+                                                                                      domain="VulnerabilityReference"/>
+                                                                    </dataProperties>
+                                                                </mapping>
+                                                                <mapping xpath="risk" ontology="Risk">
+                                                                    <dataProperties>
+                                                                        <dataProperty xpath="id" ontology="id"
+                                                                                      domain="Risk"/>
+                                                                        <dataProperty xpath="unitBaseScore"
+                                                                                      ontology="unitBaseScore"
+                                                                                      domain="Risk"/>
+                                                                        <dataProperty xpath="baseScore"
+                                                                                      ontology="baseScore"
+                                                                                      domain="Risk"/>
+                                                                    </dataProperties>
+                                                                </mapping>
+                                                            </mappings>
+                                                        </mapping>
+                                                    </mappings>
+                                                </mapping>
+                                                <!-- 												<mapping xpath="operatingSystems/operatingSystem" --><!-- 													ontology="OS"> --><!-- 													<dataProperties> --><!-- 														<dataProperty xpath="product" ontology="product" --><!-- 															domain="OS" /> --><!-- 														<dataProperty xpath="version" ontology="version" --><!-- 															domain="OS" /> --><!-- 														<dataProperty xpath="vendor" ontology="vendor" --><!-- 															domain="OS" /> --><!-- 														<dataProperty xpath="architecture" ontology="architecture" --><!-- 															domain="OS" /> --><!-- 														<dataProperty xpath="description" ontology="description" --><!-- 															domain="OS" /> --><!-- 													</dataProperties> --><!-- 												</mapping> --><!-- 												<mapping xpath="applications/application" ontology="Software"> --><!-- 													<dataProperties> --><!-- 														<dataProperty xpath="product" ontology="product" --><!-- 															domain="Software" /> --><!-- 														<dataProperty xpath="version" ontology="version" --><!-- 															domain="Software" /> --><!-- 														<dataProperty xpath="vendor" ontology="vendor" --><!-- 															domain="Software" /> --><!-- 														<dataProperty xpath="architecture" ontology="architecture" --><!-- 															domain="Software" /> --><!-- 														<dataProperty xpath="description" ontology="description" --><!-- 															domain="Software" /> --><!-- 													</dataProperties> --><!-- 												</mapping> -->
+                                                <mapping xpath="vulnerabilities/vulnerability" ontology="Vulnerability">
+                                                    <dataProperties>
+                                                        <dataProperty xpath="key" ontology="id" domain="Vulnerability"/>
+                                                        <dataProperty xpath="accessVector" ontology="accessVector"
+                                                                      domain="Vulnerability"/>
+                                                    </dataProperties>
+                                                    <mappings>
+                                                        <mapping xpath="references/reference"
+                                                                 ontology="VulnerabilityReference">
+                                                            <dataProperties>
+                                                                <dataProperty xpath="id" ontology="id"
+                                                                              domain="VulnerabilityReference"/>
+                                                                <dataProperty xpath="key" ontology="key"
+                                                                              domain="VulnerabilityReference"/>
+                                                                <dataProperty xpath="source" ontology="type"
+                                                                              domain="VulnerabilityReference"/>
+                                                            </dataProperties>
+                                                        </mapping>
+                                                        <mapping xpath="risk" ontology="Risk">
+                                                            <dataProperties>
+                                                                <dataProperty xpath="id" ontology="id" domain="Risk"/>
+                                                                <dataProperty xpath="unitBaseScore"
+                                                                              ontology="unitBaseScore" domain="Risk"/>
+                                                                <dataProperty xpath="baseScore" ontology="baseScore"
+                                                                              domain="Risk"/>
+                                                            </dataProperties>
+                                                        </mapping>
+                                                    </mappings>
+                                                </mapping>
+                                            </mappings>
+                                        </mapping>
+                                    </mappings>
+                                </mapping>
+                            </mappings>
+                        </mapping>
+                        <mapping xpath="firewallRules/rule" ontology="FirewallRules">
+                            <dataProperties>
+                                <dataProperty xpath="type" ontology="ruleType" domain="FirewallRules"/>
+                                <dataProperty xpath="protocol" ontology="protocol" domain="FirewallRules"/>
+                                <dataProperty xpath="portNumber" ontology="port" domain="FirewallRules"/>
+                                <dataProperty xpath="sourceIp" ontology="sourceIp" domain="FirewallRules"/>
+                                <dataProperty xpath="targetIp" ontology="targetIp" domain="FirewallRules"/>
+                                <dataProperty xpath="id" ontology="id" domain="FirewallRules"/>
+                            </dataProperties>
+                        </mapping>
+                        <mapping xpath="CVEList/cve" ontology="CVEDetect">
+                            <dataProperties>
+                                <dataProperty xpath="key" ontology="key" domain="CVEDetect"/>
+                                <dataProperty xpath="id" ontology="id" domain="CVEDetect"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

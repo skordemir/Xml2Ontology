@@ -1,0 +1,16 @@
+<xmltoOntology>
+<classPropertyMapping>
+	
+	<mapping xpath = "/report/report/results" ontology = "Node"/>	
+	<mapping xpath = "/report/report/results/result/port" ontology = "Port" />
+	<mapping xpath = "/report/report/results/result/nvt/cve" ontology = "Vulnerability" domain="Port"/>
+	<mapping xpath = "/report/report/results/result/nvt/bid/@bid" ontology = "Vulnerability" domain="Port"/>
+</classPropertyMapping>
+<dataPropertyMapping >
+
+<mapping xpath = "/report/report/results/result/host/@host" ontology = "address" range="Address"/>
+<mapping xpath = "/report/report/results/result/port/@port" ontology = "portNumber" range="Port"/>
+<mapping xpath = "/report/report/results/result/nvt/cve/@cve" ontology = "vulnerabilityKey" range="Vulnerability"/>
+<mapping xpath = "/report/report/results/result/nvt/bid/@bid" ontology = "vulnerabilityKey" range="Vulnerability"/>
+</dataPropertyMapping>
+</xmltoOntology>

@@ -1,0 +1,42 @@
+<xmltoOntology>
+			<mappings>
+				<mapping xpath="Device" ontology="Node">
+					<dataProperties>
+						<dataProperty xpath="Nodes/Node/ipaddress" ontology="ip" domain="Node" />
+						<dataProperty xpath="Nodes/Node/creationType" ontology="creationType" domain="Node" />
+						<dataProperty xpath="type" ontology="type" domain="Node" />
+					</dataProperties>
+					<mappings>
+						<mapping xpath="Nodes/Node/Vulnerabilities/Vulnerability" ontology="Vulnerability">
+							<dataProperties>
+								<dataProperty xpath="vulKey" ontology="key" domain="Vulnerability" />
+							</dataProperties>
+						</mapping>
+						<mapping xpath="Nodes/Node/Softwares/Software" ontology="Software">
+							<dataProperties>
+								<dataProperty xpath="CPEContent" ontology="product" domain="Software" />
+							</dataProperties>
+							<mappings>
+								<mapping xpath="Ports/Port" ontology="Port">
+									<dataProperties>
+										<dataProperty xpath="portNumber" ontology="port" domain="Port" />
+									</dataProperties>
+									<mappings>
+										<mapping xpath="Vulnerabilities/Vulnerability" ontology="Vulnerability">
+											<dataProperties>
+												<dataProperty xpath="vulKey" ontology="key" domain="Vulnerability" />
+											</dataProperties>
+										</mapping>
+									</mappings>
+								</mapping>
+							</mappings>
+						</mapping>
+						<mapping xpath="Nodes/Node/NodeOperatingSystemSoftwares/Software" ontology="OS">
+							<dataProperties>
+								<dataProperty xpath="CPEContent" ontology="product" domain="OS" />
+							</dataProperties>
+						</mapping>
+					</mappings>
+				</mapping>
+			</mappings>
+		</xmltoOntology>

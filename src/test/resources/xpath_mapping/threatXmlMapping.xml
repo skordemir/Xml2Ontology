@@ -1,0 +1,78 @@
+<xmltoOntology>
+    <mappings>
+        <mapping xpath="threat/threatDefiniton" ontology="Threat">
+            <dataProperties>
+                <dataProperty xpath="id" ontology="id" domain="Threat"/>
+                <dataProperty xpath="name" ontology="name" domain="Threat"/>
+            </dataProperties>
+            <mappings>
+                <mapping xpath="threatSources/threatSource" ontology="ThreatSource">
+                    <dataProperties>
+                        <dataProperty xpath="type" ontology="type" domain="ThreatSource"/>
+                        <dataProperty xpath="name" ontology="name" domain="ThreatSource"/>
+                        <dataProperty xpath="id" ontology="id" domain="ThreatSource"/>
+                        <dataProperty xpath="ip" ontology="ip" domain="ThreatSource"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="privileges/privilege" ontology="Privilege">
+                            <dataProperties>
+                                <dataProperty xpath="id" ontology="id" domain="Privilege"/>
+                                <dataProperty xpath="value" ontology="name" domain="Privilege"/>
+                            </dataProperties>
+                        </mapping>
+                        <mapping xpath="threatSourceNodes/threatSourceNode" ontology="Node">
+                            <dataProperties>
+                                <dataProperty xpath="globalUniqeId" ontology="guid" domain="Node"/>
+                                <dataProperty xpath="ip" ontology="ip" domain="Node"/>
+                                <dataProperty xpath="mac" ontology="mac" domain="Node"/>
+                                <dataProperty xpath="name" ontology="name" domain="Node"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+                <mapping xpath="targetSystems/system" ontology="System">
+                    <dataProperties>
+                        <dataProperty xpath="id" ontology="id" domain="System"/>
+                        <dataProperty xpath="name" ontology="name" domain="System"/>
+                        <dataProperty xpath="weight" ontology="weight" domain="System"/>
+                        <dataProperty xpath="goal" ontology="goal" domain="System"/>
+                        <dataProperty xpath="confidentialityAssesment" ontology="confidentiality"
+                                      domain="SecurityTokens"/>
+                        <dataProperty xpath="integrityAssesment" ontology="integrity" domain="SecurityTokens"/>
+                        <dataProperty xpath="avaliabilityAssesment" ontology="avaliability" domain="SecurityTokens"/>
+                        <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Risk"/>
+                        <dataProperty xpath="evaluatedRiskScore" ontology="evalScore" domain="Risk"/>
+                    </dataProperties>
+                    <mappings>
+                        <mapping xpath="subSystems/system" ontology="System">
+                            <dataProperties>
+                                <dataProperty xpath="id" ontology="id" domain="System"/>
+                                <dataProperty xpath="name" ontology="name" domain="System"/>
+                                <dataProperty xpath="weight" ontology="weight" domain="System"/>
+                                <dataProperty xpath="confidentialityAssesment" ontology="confidentiality"
+                                              domain="SecurityTokens"/>
+                                <dataProperty xpath="integrityAssesment" ontology="integrity" domain="SecurityTokens"/>
+                                <dataProperty xpath="avaliabilityAssesment" ontology="avaliability"
+                                              domain="SecurityTokens"/>
+                                <dataProperty xpath="baseRiskScore" ontology="baseScore" domain="Risk"/>
+                                <dataProperty xpath="evaluatedRiskScore" ontology="evalScore" domain="Risk"/>
+                            </dataProperties>
+                            <mappings>
+                                <mapping xpath="systemNodes/systemNode" ontology="Node">
+                                    <dataProperties>
+                                        <dataProperty xpath="globalUniqeId" ontology="guid" domain="Node"/>
+                                    </dataProperties>
+                                </mapping>
+                            </mappings>
+                        </mapping>
+                        <mapping xpath="systemNodes/systemNode" ontology="Node">
+                            <dataProperties>
+                                <dataProperty xpath="globalUniqeId" ontology="guid" domain="Node"/>
+                            </dataProperties>
+                        </mapping>
+                    </mappings>
+                </mapping>
+            </mappings>
+        </mapping>
+    </mappings>
+</xmltoOntology>

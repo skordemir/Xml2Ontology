@@ -1,0 +1,39 @@
+<xmltoOntology>
+	<classPropertyMapping>
+		<mapping xpath="/summary/network" ontology="Network" domain=""/>
+		<mapping xpath="/summary/network/routers/router/devices/device" ontology="Device"/>
+		<mapping xpath="/summary/network/routers/router" ontology="Router"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet" ontology="Subnet" domain="Device"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet" ontology="Subnet" domain="Router"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/sites/site" ontology="Site"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/sites/site" ontology="Site"/>
+	</classPropertyMapping>
+	
+	<recursiveClassPropertyMapping>
+	
+	<mapping xpath="/summary/network" ontology="Network" domain="" domainPathDiff=""/>
+	</recursiveClassPropertyMapping>
+	
+	<dataPropertyMapping>
+		<mapping xpath="/summary/network/orgUnitID/@orgUnitID" ontology="orgUnitID" range="Network"/>
+		<mapping xpath="/summary/network/orgUnitName/@orgUnitName" ontology="orgUnitName" range="Network"/>
+		<mapping xpath="/summary/network/routers/router/ip/@ip" ontology="routerIp" range="Router"/>
+		<mapping xpath="/summary/network/routers/router/desc/@desc" ontology="routerDescription" range="Router"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/ip/@ip" ontology="deviceIp" range="Device"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/type/@type" ontology="deviceType" range="Device"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/desc/@desc" ontology="deviceDescription" range="Device"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/startIp/@startIp" ontology="startIp" range="Subnet"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/endIp/@endIp" ontology="endIp" range="Subnet"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/startIp/@startIp" ontology="startIp" range="Subnet"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/endIp/@endIp" ontology="endIp" range="Subnet"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/sites/site/startIp/@startIp" ontology="startIp" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/sites/site/endIp/@endIp" ontology="endIp" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/sites/site/name/@name" ontology="siteName" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/devices/device/subnets/subnet/sites/site/id/@id" ontology="siteID" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/sites/site/startIp/@startIp" ontology="startIp" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/sites/site/endIp/@endIp" ontology="endIp" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/sites/site/name/@name" ontology="siteName" range="Site"/>
+		<mapping xpath="/summary/network/routers/router/subnets/subnet/sites/site/id/@id" ontology="siteID" range="Site"/>
+	</dataPropertyMapping>
+</xmltoOntology>
+
